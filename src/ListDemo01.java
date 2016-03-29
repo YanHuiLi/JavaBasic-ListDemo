@@ -15,7 +15,20 @@ public class ListDemo01 {
         lists= new ArrayList<>();
         lists.add("A");
         lists.add("B");
-        lists.add("A");
+        lists.add("C");
         lists.forEach(System.out::println);
+
+
+        lists.remove(0);
+        //当数组中的a0被溢出后，B的下标即为0，C的即为1；
+
+        System.out.println("删除以后的");
+        lists.forEach(System.out::println);
+
+
+
+        System.out.println(lists.isEmpty());
+        //B是否存在
+        System.out.println(lists.indexOf("A"));
     }
 }
